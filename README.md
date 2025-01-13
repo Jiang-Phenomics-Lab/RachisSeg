@@ -8,16 +8,17 @@
  
 ### Requirements:  
 ```angular2
-pytorch >= 1.1.0
-detectron2
-numpy
-torchvision
-Tensorboard
-Scipy
+torch==1.12.0
+detectron2==0.6
+numpy==1.26.0
+opencv-python==4.8.1.78
+scikit-image==0.19.2
+skfmm==1.5.3
+matplotlib==3.5.1
+scipy==1.10.1
 ```
 ### Code Structure
 All codes were written by python.
-
 **Scripts/U-net_prediction.py** : A high-throughput pipeline of CT image processing with UNet-based segmentation pipeline.
 
 **Scripts/Extraction.py** : Extraction of barley spike morphological features.
