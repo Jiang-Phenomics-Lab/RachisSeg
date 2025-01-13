@@ -1,4 +1,4 @@
-## RachisSeg: Automated Rachis Phenotyping Pipeline
+# RachisSeg: Automated Rachis Phenotyping Pipeline
 
 
 
