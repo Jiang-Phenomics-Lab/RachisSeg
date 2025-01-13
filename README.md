@@ -20,8 +20,10 @@ scipy==1.10.1
 ## Installation
 
 ### Clone the Repository: 
+```
 git clone https://github.com/yourusername/RachisSeg.git
 cd RachisSeg
+```
 
 ### Create and Activate a Virtual Environment (Optional but Recommended): 
 ```
@@ -30,7 +32,9 @@ source venv/bin/activate  # For Windows users: `venv\Scripts\activate`
 ```
 
 ### Install Dependencies: 
+```
 pip install -r requirements.txt
+```
 
 ## Code Structure
 All codes were written by python.
