@@ -24,7 +24,7 @@ scipy==1.10.1
 
 ### Clone the Repository: 
 ```
-git clone https://github.com/yourusername/RachisSeg.git
+git clone https://github.com/Jiang-Phenomics-Lab/RachisSeg.git
 cd RachisSeg
 ```
 
@@ -86,8 +86,7 @@ python rachis_prediction.py
 ## examples
 
 <img src="https://github.com/wolny/pytorch-3dunet/blob/master/resources/3DUnet_confocal_boundary/ovules_pred.png" width="400">
-<img src="https://github.com/wolny/pytorch-3dunet/blob/master/resources/3DUnet_confocal_boundary/ovules_pred.png" width="400">
-<img src="https://github.com/wolny/pytorch-3dunet/blob/master/resources/3DUnet_confocal_boundary/ovules_pred.png" width="400">
+<img src="https://github.com/Jiang-Phenomics-Lab/RachisSeg/dataset/ovules_pred.png" width="400">
  
 **Contact**
 For questions or support, please contact: rxlu@genetics.ac.cn
