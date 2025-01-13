@@ -1,0 +1,8 @@
+torch==1.12.0
+detectron2==0.6
+numpy==1.26.0
+opencv-python==4.8.1.78
+scikit-image==0.19.2
+skfmm==1.5.3
+matplotlib==3.5.1
+scipy==1.10.1
