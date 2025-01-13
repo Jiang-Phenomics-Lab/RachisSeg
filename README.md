@@ -62,7 +62,7 @@ Collect and organize rachis image data, ensuring high image quality and accurate
 Use register_dataset.py to split and register the dataset.
 
 ```
-python register_dataset.py --input_dir path/to/raw_images --output_dir path/to/processed_dataset
+python register_dataset.py
 ```
 
 ### 2) Training RachisSeg
@@ -70,14 +70,14 @@ python register_dataset.py --input_dir path/to/raw_images --output_dir path/to/p
 Run the training script:
 
 ```
-python rachis_train.py --config-file configs/rachis_config.yaml
+python rachis_train.py
 ```
 
 ### 3) Testing RachisSeg
 
 Use the trained model to make predictions by running rachis_prediction.py:
 ```
-python rachis_prediction.py --input path/to/input_image.jpg --output path/to/save_predictions/
+python rachis_prediction.py
 ```
 
 ## examples
