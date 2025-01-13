@@ -1,6 +1,9 @@
 # RachisSeg: Automated Rachis Phenotyping Pipeline
 
-
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![PyTorch Version](https://img.shields.io/badge/pytorch-1.12.0-brightgreen.svg)
+![Detectron2 Version](https://img.shields.io/badge/detectron2-0.6-brightgreen.svg)
 
 ## Introduction
 RachisSeg is a high-throughput, automated phenotyping pipeline designed to segment rachis internodes and quantitatively analyze rachis traits in wheat. By integrating deep learning networks with traditional image analysis algorithms, RachisSeg offers precise measurements, reducing the labor and errors associated with manual phenotyping.
