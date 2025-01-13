@@ -19,12 +19,18 @@ scipy==1.10.1
 ```
 ### Code Structure
 All codes were written by python.
-**Scripts/U-net_prediction.py** : A high-throughput pipeline of CT image processing with UNet-based segmentation pipeline.
 
-**Scripts/Extraction.py** : Extraction of barley spike morphological features.
+**coco_merge.py** : Merge of multiple coco formated json file.
 
-**Scripts/requirements.txt** : Authors' python environments.
+**cropRachis.py** : Crop individual rachis from original scaned images.
 
+**evaluator.py** : evaluation of trained model.
+
+**rachis_prediction.py** : Prediction of rachis node and extraction of rachis phenotype.
+
+**rachis_train.py** : Train of rachis node objective detection.
+
+**register_dataset.py** : Spilit rachis dataset and register the dataset.
 
 ## Quickly Start
 ### 1)Rachis image dataset: 
