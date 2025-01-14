@@ -88,7 +88,9 @@ python rachis_prediction.py
 ## examples
 
 <img src="https://github.com/Jiang-Phenomics-Lab/RachisSeg/dataset/rachis_phenotyping_pipeline.png" width="6496">
+
 ![Rachis Phenotyping Pipeline](dataset/rachis_phenotyping_pipeline.png){:width="800px"}
+
 ![Rachis Phenotyping Pipeline](https://raw.githubusercontent.com/Jiang-Phenomics-Lab/RachisSeg/main/dataset/rachis_phenotyping_pipeline.png){:width="800px"}
 
 <img src="https://raw.githubusercontent.com/Jiang-Phenomics-Lab/RachisSeg/main/dataset/rachis_phenotyping_pipeline.png" alt="Rachis Phenotyping Pipeline" width="800">
