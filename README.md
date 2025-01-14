@@ -85,11 +85,16 @@ Use the trained model to make predictions by running rachis_prediction.py:
 python rachis_prediction.py
 ```
 
-## examples
+## flowchart
 
 Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits.
 
 ![Rachis Phenotyping Pipeline](dataset/rachis_phenotyping_pipeline.png)
+
+## examples
+
+![Rachis Phenotyping Pipeline](dataset/examples.png)
+dataset/examples.png
 
 
 **Contact**
