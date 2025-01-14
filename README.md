@@ -48,7 +48,7 @@ All codes were written by python.
 
 **cropRachis.py** : Crop individual rachis from original scaned images.
 
-**evaluator.py** : evaluation of trained model.
+**evaluator.py** : Evaluation of trained model.
 
 **rachis_prediction.py** : Prediction of rachis node and extraction of rachis phenotype.
 
