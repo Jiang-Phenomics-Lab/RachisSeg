@@ -79,31 +79,18 @@ def split_coco_annotation(coco_json_path, image_root, output_dir, split_ratio=(0
         }
     }
     
-    # 保存拆分后的标注文件，并复制对应的图像文件到各自的文件夹
     for split in ['train', 'val', 'test']:
-        # 保存标注文件
         output_json_path = os.path.join(output_dir, f'{split}.json')
         with open(output_json_path, 'w') as f:
             json.dump(datasets[split], f)
-        
-        # 创建对应的图像文件夹
         split_image_dir = os.path.join(output_dir, split)
         os.makedirs(split_image_dir, exist_ok=True)
         
-        # 复制图像文件
         for img_info in datasets[split]['images']:
             src_img_path = os.path.join(image_root, img_info['file_name'])
             dst_img_path = os.path.join(split_image_dir, img_info['file_name'])
-            # 确保目标文件夹存在
             os.makedirs(os.path.dirname(dst_img_path), exist_ok=True)
-            # 复制图像
             shutil.copy2(src_img_path, dst_img_path)
-    
-    print(f"数据集已拆分并保存到 {output_dir}。")
-    print(f"训练集：{len(train_images)} 张图像")
-    print(f"验证集：{len(val_images)} 张图像")
-    print(f"测试集：{len(test_images)} 张图像")
-    
     return datasets
 
 def register_datasets(output_dir):
