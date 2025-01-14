@@ -58,8 +58,8 @@ All codes were written in python.
 
 ## Quick Start
 
-- If you want to use my trained model directly, download the pth file at the following link and run rachis_prediction.py directly [RachisSeg_model](https://1drv.ms/u/c/6e511ec9eedb20ec/EanHFrk7nSlNu-aLhvQvgcYBTbPEzUyAO_CiAzinqSTlog?e=4a0cFo.)
-- If you want to retrain the modelFollow this quick start guide to get RachisSeg up and running:
+- Using the Pre-trained Model: If you want to use the pre-trained model directly, download the .pth file from the following link and run rachis_prediction.py: [RachisSeg_model](https://1drv.ms/u/c/6e511ec9eedb20ec/EanHFrk7nSlNu-aLhvQvgcYBTbPEzUyAO_CiAzinqSTlog?e=4a0cFo.)
+- Retraining the Model: If you want to retrain the model, follow this quick start guide:
 
 ### 1)Prepare the Rachis Image Dataset: 
 
