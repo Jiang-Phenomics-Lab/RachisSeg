@@ -241,7 +241,7 @@ def setup(args):
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.OUTPUT_DIR = out_dir
     cfg.TEST.EVAL_PERIOD=300
-    cfg.INPUT.MIN_SIZE_TRAIN: ()       #设置为空即不会对图像的大小再处理
+    cfg.INPUT.MIN_SIZE_TRAIN: ()      
     cfg.INPUT.MAX_SIZE_TRAIN: 99999
     #cfg.MODEL.ANCHOR_GENERATOR.SIZES=[[16],[32],[64],[128],[256]]
     cfg.SOLVER.OPTIMIZER='ADAM'
