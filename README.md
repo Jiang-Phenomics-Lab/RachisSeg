@@ -87,12 +87,10 @@ python rachis_prediction.py
 
 ## examples
 
+Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits
 
 ![Rachis Phenotyping Pipeline](dataset/rachis_phenotyping_pipeline.png){:width="800px"}
 
-![Rachis Phenotyping Pipeline](https://raw.githubusercontent.com/Jiang-Phenomics-Lab/RachisSeg/main/dataset/rachis_phenotyping_pipeline.png){:width="800px"}
-
-<img src="https://raw.githubusercontent.com/Jiang-Phenomics-Lab/RachisSeg/main/dataset/rachis_phenotyping_pipeline.png" alt="Rachis Phenotyping Pipeline" width="800">
 
 **Contact**
 For questions or support, please contact: rxlu@genetics.ac.cn
