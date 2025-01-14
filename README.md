@@ -87,9 +87,9 @@ python rachis_prediction.py
 
 ## examples
 
-Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits
+Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits.
 
-![Rachis Phenotyping Pipeline](dataset/rachis_phenotyping_pipeline.png){:width="800px"}
+![Rachis Phenotyping Pipeline](dataset/rachis_phenotyping_pipeline.png)
 
 
 **Contact**
