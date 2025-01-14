@@ -58,7 +58,8 @@ All codes were written by python.
 
 ## Quickly Start
 
-Follow this quick start guide to get RachisSeg up and running:
+- If you want to use my trained model directly, download the pth file at the following link and run rachis_prediction.py directly [RachisSeg_model]https://1drv.ms/u/c/6e511ec9eedb20ec/EanHFrk7nSlNu-aLhvQvgcYBTbPEzUyAO_CiAzinqSTlog?e=4a0cFo.
+- If you want to retrain the modelFollow this quick start guide to get RachisSeg up and running:
 
 ### 1)Prepare the Rachis Image Dataset: 
 
@@ -72,13 +73,14 @@ python register_dataset.py
 
 ### 2) Training RachisSeg
 
+
 Run the training script:
 
 ```
 python rachis_train.py
 ```
 
-### 3) Testing RachisSeg
+### 3) Running RachisSeg
 
 Use the trained model to make predictions by running rachis_prediction.py:
 ```
