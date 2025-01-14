@@ -27,7 +27,7 @@ def main():
     cfg.merge_from_file(model_zoo.get_config_file(base_cfg_path))
     cfg.MODEL.WEIGHTS = '/public/home/rxlu/DL/model/train_output/best_model.pth' 
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    cfg.INPUT.MIN_SIZE_TEST: ()       #设置为空即不会对图像的大小再处理
+    cfg.INPUT.MIN_SIZE_TEST: ()       
     cfg.INPUT.MAX_SIZE_TEST: 99999
     predictor = DefaultPredictor(cfg)
 
