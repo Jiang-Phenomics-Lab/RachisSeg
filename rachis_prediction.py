@@ -16,7 +16,6 @@ from skimage.measure import label, regionprops
 import skfmm
 
 def main():   
-
     in_dir='/home/ubuntu/picture/rachis_crop'
     out_dir = '/home/ubuntu/picture/rachis_crop_out'
     if not os.path.isdir(out_dir):
@@ -30,12 +29,10 @@ def main():
     cfg.INPUT.MIN_SIZE_TEST: ()       
     cfg.INPUT.MAX_SIZE_TEST: 99999
     predictor = DefaultPredictor(cfg)
-
     csv_content='Img_name,SNS, RL, PD, SD, AVB_SNS, AVB_IL, SDI, IL, IW\n'
     file = open(csv_file, 'a+')
     with open(csv_file,'w') as f:
         f.write(csv_content)
-
     flist = sorted(glob(in_dir +'/*.png'))
     for id in range(len(flist)):
         img = cv2.imread(flist[id])
@@ -48,7 +45,6 @@ def main():
         label_img = label(bw_img,connectivity=1)
         panicles = regionprops(label_img, blurred_img)
         i = 0
-
         for region in panicles:
             if region.area > 9000 and region.major_axis_length > 550:
                 out_file_path = os.path.join(out_dir, '{}_{}'.format(filename[:-4], i))
@@ -76,20 +72,14 @@ def nms(bounding_boxes, confidence_scores, threshold):
     start_y = bounding_boxes[:,1]
     end_x = bounding_boxes[:,2]
     end_y = bounding_boxes[:,3]
-
     picked_bboxes = []
     picked_scores = []
-
     areas = (end_x - start_x + 1) * (end_y - start_y + 1)
-
     order = np.argsort(confidence_scores)
-
     while order.size > 0:
         index = order[-1]
-
         picked_bboxes.append(bounding_boxes[index])
         picked_scores.append(confidence_scores[index])
-
         x1 = np.maximum(start_x[index], start_x[order[:-1]])
         x2 = np.minimum(end_x[index], end_x[order[:-1]])
         y1 = np.maximum(start_y[index], start_y[order[:-1]])
@@ -103,7 +93,6 @@ def nms(bounding_boxes, confidence_scores, threshold):
         order = order[left]
     picked_bboxes=np.array(picked_bboxes)
     picked_scores=np.array(picked_scores)
-
     return picked_bboxes, picked_scores
 
 def keepLargestComponent(bw):
@@ -121,18 +110,15 @@ def auc_calculation(Branch_length):
     std_y=np.std(y)
     outliers=np.abs(y-mean_y)>threshold*std_y
     x_filtered, y_filtered = x[~outliers], y[~outliers]
-
     for n in range(len(y_filtered)+1):
         add_il=np.sum(y_filtered[:n])
         Add_IL.append(add_il)
-
     y1=np.array(Add_IL).copy()
     y1_norm=y1/np.max(y1)
     x1=np.arange(0,len(y1_norm))
     x1_norm=x1/np.max(x1)
     auc= (np.trapz(y1_norm, x1_norm))/0.5 
     return auc
-
 
 def IL(node_gdMax,j):
     IL=(node_gdMax[j]-node_gdMax[j-1])/(node_gdMax[j+1]-node_gdMax[j])
@@ -143,10 +129,8 @@ def restore_order(bounding_boxes, scores, picked_bboxes, picked_scores):
     mask[np.isin(bounding_boxes, picked_bboxes).all(axis=1)] = True
     original_order = np.argsort(scores)[::-1]
     order = original_order[mask[original_order]]
-
     restored_bboxes = picked_bboxes[np.argsort(order)]
     restored_scores = picked_scores[np.argsort(order)]
-
     return restored_bboxes, restored_scores
 
 def rotatecordiate(angle,rect,height,width):
@@ -170,12 +154,10 @@ def save_test_image(filename,image, bw, bs, outputs, out_file_path):
     height=image.shape[0]
     width=image.shape[1]
     bw = keepLargestComponent(bw)
-
     gdt = ones_like(bw)
     gdt = ma.masked_array(gdt, bw==0)
     gdt[bs, bw[bs, :] > 0] = 0
     gd = skfmm.distance(gdt)
-
     node_gdMax = []
     node_gdMax1 = []
     temp_bboxes=[]
@@ -184,11 +166,9 @@ def save_test_image(filename,image, bw, bs, outputs, out_file_path):
     final_scores=[]
     sorted_bboxes=[]
     sorted_scores=[]
-
     bboxes = bboxes.tensor.to('cpu').numpy()
     scores = np.array(scores)
     bboxes,scores=nms(bboxes,scores,0.1)
-
     for bbox,cls,sco in zip(bboxes,classes,scores):
         if sco < 0.4:
             continue
