@@ -85,17 +85,17 @@ Use the trained model to make predictions by running rachis_prediction.py:
 python rachis_prediction.py
 ```
 
-## flowchart
+## Flowchart
 
 Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits.
 
 ![Rachis Phenotyping Pipeline](dataset/rachis_phenotyping_pipeline.png)
 
-## examples
+## Examples
+
+Segmentation of rachis internodes from three wheat varieties revealed distinct morphologies.
 
 ![Rachis Phenotyping Pipeline](dataset/examples.png)
-dataset/examples.png
-
 
 **Contact**
 For questions or support, please contact: rxlu@genetics.ac.cn
