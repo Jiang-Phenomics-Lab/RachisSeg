@@ -8,7 +8,7 @@
 ## Introduction
 - RachisSeg is a high-throughput, automated phenotyping pipeline designed to segment rachis internodes and quantitatively analyze rachis traits in wheat.
 - By integrating deep learning networks with traditional image analysis algorithms, RachisSeg offers precise measurements, reducing the labor and errors associated with manual phenotyping.
-- RachisSeg based on [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://ieeexplore.ieee.org/document/7485869)
+- RachisSeg is based on [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://ieeexplore.ieee.org/document/7485869)
 
  
 ## Requirements:  
@@ -42,11 +42,11 @@ pip install -r requirements.txt
 ```
 
 ## Code Structure
-All codes were written by python.
+All codes were written in python.
 
 **coco_merge.py** : Merge of multiple coco formated json file.
 
-**cropRachis.py** : Crop individual rachis from original scaned images.
+**cropRachis.py** : Crop individual rachis from original scanned images.
 
 **evaluator.py** : Evaluation of trained model.
 
@@ -54,11 +54,11 @@ All codes were written by python.
 
 **rachis_train.py** : Train of rachis node objective detection.
 
-**register_dataset.py** : Spilit rachis dataset and register the dataset.
+**register_dataset.py** : Split rachis dataset and register the dataset.
 
-## Quickly Start
+## Quick Start
 
-- If you want to use my trained model directly, download the pth file at the following link and run rachis_prediction.py directly [RachisSeg_model]https://1drv.ms/u/c/6e511ec9eedb20ec/EanHFrk7nSlNu-aLhvQvgcYBTbPEzUyAO_CiAzinqSTlog?e=4a0cFo.
+- If you want to use my trained model directly, download the pth file at the following link and run rachis_prediction.py directly [RachisSeg_model](https://1drv.ms/u/c/6e511ec9eedb20ec/EanHFrk7nSlNu-aLhvQvgcYBTbPEzUyAO_CiAzinqSTlog?e=4a0cFo.)
 - If you want to retrain the modelFollow this quick start guide to get RachisSeg up and running:
 
 ### 1)Prepare the Rachis Image Dataset: 
