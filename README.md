@@ -41,20 +41,21 @@ source venv/bin/activate  # For Windows users: `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
-## Code Structure
+## Code discription
 All codes were written in python.
 
-**coco_merge.py** : Merge of multiple coco formated json file.
+- **coco_merge.py** : Merge of multiple coco formated json file.
 
-**cropRachis.py** : Crop individual rachis from original scanned images.
+- **cropRachis.py** : Crop individual rachis from original scanned images.
 
-**evaluator.py** : Evaluation of trained model.
+- **evaluator.py** : Evaluation of trained model.
 
-**rachis_prediction.py** : Prediction of rachis node and extraction of rachis phenotype.
+- **rachis_prediction.py** : Prediction of rachis node and extraction of rachis phenotype.
 
-**rachis_train.py** : Train of rachis node objective detection.
+- **rachis_train.py** : Train of rachis node objective detection.
 
-**register_dataset.py** : Split rachis dataset and register the dataset.
+- **register_dataset.py** : Split rachis dataset and register the dataset.
+
 
 ## Quick Start
 
