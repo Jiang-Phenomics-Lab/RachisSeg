@@ -41,7 +41,7 @@ source venv/bin/activate  # For Windows users: `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
-## Code discription
+## Code Discription
 All codes were written in python.
 
 - **coco_merge.py** : Merge of multiple coco formated json file.
@@ -89,7 +89,7 @@ Use the trained model to make predictions by running rachis_prediction.py:
 python rachis_prediction.py
 ```
 
-## Flowchart
+## Flowchart of RchisSeg
 
 Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits.
 
