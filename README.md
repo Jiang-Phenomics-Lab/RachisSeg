@@ -99,7 +99,7 @@ Rachis phenotyping pipeline (RachisSeg) for measurement of rachis traits.
 
 Segmentation of rachis internodes from three wheat varieties revealed distinct morphologies.
 
-![Rachis Phenotyping Pipeline](dataset/examples.png)
+![Rachis Phenotyping Pipeline](dataset/examples.tif)
 
 **Contact**
 For questions or support, please contact: rxlu@genetics.ac.cn
